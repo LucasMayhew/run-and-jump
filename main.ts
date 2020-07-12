@@ -1,5 +1,160 @@
 namespace SpriteKind {
     export const coin = SpriteKind.create()
+    export const thepet = SpriteKind.create()
+}
+function pet () {
+    leist2 = [img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, img`
+. . 4 4 4 . . . . 4 4 4 . . . . 
+. 4 5 5 5 e . . e 5 5 5 4 . . . 
+4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+. e e 5 5 5 5 5 5 5 5 e e . . . 
+. . e 5 f 5 5 5 5 f 5 e . . . . 
+. . f 5 5 5 4 4 5 5 5 f . . f f 
+. . f 4 5 5 f f 5 5 6 f . f 5 f 
+. . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+. . . f 4 5 5 5 5 5 5 4 4 5 f . 
+. . . f 5 5 5 5 5 4 5 5 f f . . 
+. . . f 5 f f f 5 f f 5 f . . . 
+. . . f f . . f f . . f f . . . 
+`, img`
+e e e . . . . e e e . . . . 
+c d d c . . c d d c . . . . 
+c b d d f f d d b c . . . . 
+c 3 b d d b d b 3 c . . . . 
+f b 3 d d d d 3 b f . . . . 
+e d d d d d d d d e . . . . 
+e d f d d d d f d e . b f b 
+f d d f d d f d d f . f d f 
+f b d d b b d d 2 f . f d f 
+. f 2 2 2 2 2 2 b b f f d f 
+. f b d d d d d d b b d b f 
+. f d d d d d b d d f f f . 
+. f d f f f d f f d f . . . 
+. f f . . f f . . f f . . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . b 5 5 b . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. b b b b b 5 5 5 5 5 5 5 b . . 
+. b d 5 b 5 5 5 5 5 5 5 5 b . . 
+. . b 5 5 b 5 d 1 f 5 d 4 f . . 
+. . b d 5 5 b 1 f f 5 4 4 c . . 
+b b d b 5 5 5 d f b 4 4 4 4 b . 
+b d d c d 5 5 b 5 4 4 4 4 4 4 b 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . c c c c c . . . 
+. . . . . . c c 5 5 5 5 5 c . . 
+. . . . . c 5 5 5 5 5 5 5 5 c . 
+. . . . c b b b b b b 5 5 5 c . 
+. . . . c 1 1 b b 1 b b c c . . 
+. . . c 1 1 1 b b 1 1 1 c . . . 
+. . . c 1 1 1 1 b 1 1 1 c . c c 
+. . . c d 1 1 1 b 1 1 1 b b 5 c 
+. . c c d 1 c 1 b 1 b 1 5 5 5 c 
+. c c d d 1 1 1 1 1 b 1 b b 5 c 
+f d d d 1 1 1 1 1 b b 1 f . c c 
+f f f 1 1 1 1 1 1 b b b f . . . 
+. . . f f 1 1 1 b b b 5 5 f . . 
+. . . . . f f f 5 5 5 5 5 f . . 
+. . . . . . . . f f f f f f . . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . c c c c . . . . 
+. . . . . . c c d d d d c . . . 
+. . . . . c c c c c c d c . . . 
+. . . . c c 4 4 4 4 d c c . . . 
+. . . c 4 d 4 4 4 4 4 1 c . c c 
+. . c 4 4 4 1 4 4 4 4 d 1 c 4 c 
+. c 4 4 4 4 1 4 4 4 4 4 1 c 4 c 
+f 4 4 4 4 4 1 4 4 4 4 4 1 4 4 f 
+f 4 4 4 f 4 1 c c 4 4 4 1 f 4 f 
+f 4 4 4 4 4 1 4 4 f 4 4 d f 4 f 
+. f 4 4 4 4 1 c 4 f 4 d f f f f 
+. . f f 4 d 4 4 f f 4 c f c . . 
+. . . . f f 4 4 4 4 c d b c . . 
+. . . . . . f f f f d d d c . . 
+. . . . . . . . . . c c c . . . 
+`, img`
+. . . . . . . . . . . . . c c f f f . . . . . . . . . . . . . . 
+. . . . . . . . . . . c c d d b c f . . . . . . . . . . . . . . 
+. . . . . . . . . . c c d d b b f . . . . . . . . . . . . . . . 
+. . . . . . . . . . f c c b b c f . . . . . . . . . . . . . . . 
+. . . . . f f f f f c c c c c c f f . . . . . . . . . c c c . . 
+. . . f f b b b b b b b c b b b b c f f f . . . . c c b b c . . 
+. . f b b b b b b b b c b c b b b b c c c f f . c d b b c . . . 
+f f b b b b b b f f b b c b c b b b c c c c c f c d b b f . . . 
+f b c b b b 1 1 f f 1 b c b b b b b c c c c c f f b b f . . . . 
+f b b b 1 1 1 1 1 1 1 1 b b b b b c c c c c c c b b c f . . . . 
+. f b 1 1 1 3 3 c c 1 1 b b b b c c c c c c c c c c c f . . . . 
+. . f c c c 3 1 c 1 1 1 b b b c c c c c b d b f f b b c f . . . 
+. . . f c 1 3 c 1 1 1 c b b b f c d d d d c c . . f b b f . . . 
+. . . . f c c c 1 1 1 f b d b b c c d c c . . . . . f b b f . . 
+. . . . . . . . c c c c f c d b b c c . . . . . . . . f f f . . 
+. . . . . . . . . . . . . f f f f f . . . . . . . . . . . . . . 
+`, img`
+. . . . f f f f f . . . . . . . 
+. . . f e e e e e f . . . . . . 
+. . f d d d d e e e f . . . . . 
+. c d f d d f d e e f f . . . . 
+. c d f d d f d e e d d f . . . 
+c d e e d d d d e e b d c . . . 
+c d d d d c d d e e b d c . f f 
+c c c c c d d d e e f c . f e f 
+. f d d d d d e e f f . . f e f 
+. . f f f f f e e e e f . f e f 
+. . . . f e e e e e e e f f e f 
+. . . f e f f e f e e e e f f . 
+. . . f e f f e f e e e e f . . 
+. . . f d b f d b f f e f . . . 
+. . . f d d c d d b b d f . . . 
+. . . . f f f f f f f f f . . . 
+`, img`
+. . . . . . . . . . . . . . . . . . . c c . . . 
+. . . . . . . . . . . . . . . c c c c 6 3 c . . 
+. . . . . . . . . . . . . . c 6 3 3 3 3 6 c . . 
+. . . . . . . . . . c c . c 6 c c 3 3 3 3 3 c . 
+. . . . . . . . . b 5 5 c 6 c 5 5 c 3 3 3 3 3 c 
+. . . . . . . . . f f 5 c 6 c 5 f f 3 3 3 3 3 c 
+. . . . . . . . . f f 5 c 6 c 5 f f 6 3 3 3 c c 
+. . . . . . . . . b 5 5 3 c 3 5 5 c 6 6 6 6 c c 
+. . . . . . . . . . b 5 5 3 5 5 c 3 3 3 3 3 3 c 
+. . . . . . . . . c c 5 5 5 5 5 b c c 3 3 3 3 c 
+. . . . . . . . c 5 5 4 5 5 5 4 b 5 5 c 3 3 c . 
+. . . . . . . . b 5 4 b 4 4 4 4 b b 5 c b b . . 
+. . . . . . . . c 4 5 5 b 4 b 5 5 5 4 c 4 5 b . 
+. . . . . . . . c 5 5 5 c 4 c 5 5 5 c 4 c 5 c . 
+. . . . . . . . c 5 5 5 5 c 5 5 5 5 c 4 c 5 c . 
+. . . . . . . . . c c c c c c c c c . . c c c . 
+`]
+    pet12 = sprites.create(leist2[game.askForNumber("pet", 1) + 1], SpriteKind.thepet)
+    scene.placeOnRandomTile(pet12, 1)
 }
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(img`
@@ -103,6 +258,8 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 scene.onHitTile(SpriteKind.Player, 4, function (sprite) {
     game.over(false)
 })
+let pet12: Sprite = null
+let leist2: Image[] = []
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
 let list = [img`
