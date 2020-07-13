@@ -152,6 +152,23 @@ c c c c c d d d e e f c . f e f
 . . . . . . . . c 5 5 5 c 4 c 5 5 5 c 4 c 5 c . 
 . . . . . . . . c 5 5 5 5 c 5 5 5 5 c 4 c 5 c . 
 . . . . . . . . . c c c c c c c c c . . c c c . 
+`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . d . . . . . . . . 
+. . . . . . . d d . . . . . . . 
+. . . . . . . d d d . . . . . . 
+. . . . . . . d d d d . . . . . 
+d . . . . . . d 1 f d . . . . . 
+d d . . . . . d 1 f d . . . . . 
+. d . . . . . d d d d . . . . . 
+. d . . . . . . d . . . . . . . 
+. d d d d d d d d . . . . . . . 
+. . . d d d d d d d . . . . . . 
+. . . d . . . . d . . . . . . . 
 `]
     pet12 = sprites.create(leist2[game.askForNumber("pet", 1)], SpriteKind.thepet)
     scene.placeOnRandomTile(pet12, 1)
@@ -429,11 +446,11 @@ b . . d . . . . . . d . . . . . . . . . . . . . d . . . . . 5 b
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 5 b b 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . b b b . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 5 5 . . 3 . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 5 5 . . . . . . 
 . . . . . . . . . . . . . . . . . 3 . 3 . . . . 5 . 5 5 5 5 5 5 
-. . . . . . . . . . . . . . . . . . . . . . . b b b d 5 c 5 5 d 
+. . . . . . . . . . . . . . . . . . . . . . . b b b . . c 5 5 . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . 5 5 b 5 5 5 
-. . . . . . . . . . . . . . . . . . . . . . b . . . 5 5 5 5 d b 
+. . . . . . . . . . . . . . . . . . . . . . b . . . 5 5 5 5 . b 
 . . . . . . . . . . . . . . . . . . . . . . . . . . b . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . b . . . . . . 
 . . . . . . . . . . . . . . . . . 3 . 3 . . c . b . . . . . . . 
@@ -575,8 +592,40 @@ e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 b b b b b b 5 5 b b b b b b b 
 e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 d b c 5 5 5 5 5 5 5 5 5 5 5 5 b e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
 e e e e e e e e e e e b c d 5 5 5 5 5 5 5 5 5 b b b b 5 5 5 5 5 5 5 5 5 a 5 5 5 b e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
 e e e e e e e e e e e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
+`, img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . b b b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 . . . . . 3 . . 3 . . 3 . . . . . . b b b b . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . b b b b b . . . . . . . . . . 
+. . b . . b . . . . . . . . . . . . b b . . . . . . . . . . . . b . . b . . . . . . . . . . . . . 5 . . . . . . . . . . . . d . b b c 5 5 5 . . . . . . . . . . 
+. . b b b b . . . . . . . . . . b b b b . . . . . . . . . . . . b b b b . . . . . . . . . . . . 5 . b b b b b b b b b b b b b b b b 5 5 5 5 . . . . . . . . . . 
+. . 3 b b 3 . . 1 . . . . . . . b b d b . . . . . . . . . . . . 3 b b 3 . . . . . . . . . . b b b . . b b b b b b b b b b b b b b b b b b 5 . . . . . . . . . . 
+. . b b b b . . . . . . . . . . . . b b . . . . . . . . . . . . b b b b . . . . . . . . . b 4 4 4 4 4 4 b b b b b b b b b b b b b b b b b b . . . . . . . b b b 
+. . . b b . . . . . . . . . . . b . . . . . . . . . . . . . . . . . . . . . . . . . . . b . . . . . . . . b b b b b b b b b b b b b b b b . . . . . . . b b b b 
+. . . b b b e b e b e b e b e b . b b b e b e b e b e b b b . b b b b b b b b b b b b b . . . b . . . . . . . . . . . . . . . . . . 5 5 5 5 . . . . . b b b b b 
+. . . b b b b b b b b b . . . . . b b b b b b b b b b . . . . . . b b b b b b b b b b . . . . b 3 3 b b b b b b b . . . . . . . . 5 5 . b b b b b b b b b b b b 
+. . . b . b . . . b . b . . . . . b . b . . . . b . b . . . . . . . . b . . . . b . b . . . . b 5 5 b . . . . . b b b . . . . . . 5 . . . b b b b b b b b b b b 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 5 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 . . . b 5 5 b . . . . . . b b b b . . . . 5 . . . . b b b b b b b b b b 
+e e e e e e e e e e e e e e e e e e 5 e e e e e e e e e e e e e e e e e e e e e 7 e e 7 7 7 . b 5 5 b . . . . . . . . b b b b b c b . . . . . . . . . . . . . . 
+e e e e e e e e e e e e e e e e e e 5 e e e e e e e e e e e e e e e e e e e e e e e e e e e 7 b 5 5 b . . . . . . . 4 . . . . . b . . . . . . . . . . . . . . . 
+e e e e e e e e e e e e e e e e e e 5 5 5 5 5 5 5 5 5 5 5 5 5 e e e e e e e e e e e e e e e e b 5 5 b . . . . . . . . 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+e e e e e e e e e e e e e e e e e b 5 5 5 b e e e e e e e e 5 5 5 e e e e e e e e e e e e e e b 5 5 b 7 . . . . . . . . . . . . . . . . . . . . . . . . . . 4 4 
+e e e e e e e e e e e e e e e e e b 5 b b e e e e e e e e e e c 5 5 e e e e e e e e e e e e e b 5 5 b e 7 . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+e e e e e e e e e e e e e e e e e b 5 b e e e e e e e e e b b e b b b e b b b e e e e e e e e b 5 5 b e e 7 . . . . . . . . . . . . . . . . . . . . . . . . . . 
+e e e e e e e e e e e e e e e e e b 5 b e e e e e e e e e b e e b e b e e b e e e e e e e e e b 5 5 b e e e 7 7 . . . . 3 . . . . . . . . . . . . . . . . . . . 
+e e e e e e e e e e e e e e e e e b 5 b e e e e e e e e e b e e b b b e e b e e e e e e e e e b 5 5 b e e e e e 7 . . . . . . . . . . . . . . . . . . . . . . . 
+e e e e e e e e e e e b b b b b b b 5 b b b b b b b b e e b b e b e b e e b e e e e e e e e e b 5 5 b e e e e e e 7 7 d . . . . . . . . . . . . . . . . . . d b 
+e e e e e e e e e e e b 3 5 5 5 5 5 5 5 5 5 5 5 5 3 b e e e e e e e e e e e e e e e e e e e e b 3 3 b e e e e e e e e 7 7 7 . . 2 . 2 . 2 . . . . . . . . . . . 
+e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 5 b e e e b b b b b b b b b b b e e e e e e b 5 5 b e e e e b b b b b b b 7 7 7 7 7 7 7 . . . . . . . . . . . 
+e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 5 b b b b b 5 5 5 5 5 5 5 5 d b e e e e e e b 5 5 b e e e e b c 5 5 5 5 b e e e e e e e 7 7 7 7 7 7 7 . . . . 
+e e e e e e e e e e e b d 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 b e e e e e e b 5 5 b e e e e b 5 5 5 5 d b e e e e e e e e e e e e e e 7 7 7 7 
+e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 b b b b b b 5 5 b b b b b b b b e e e e e e b 5 5 b b b b b b d 5 5 5 5 b e e e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 5 d b c 5 5 5 5 5 5 5 5 5 5 5 5 b e e e e e e b 5 5 5 5 5 5 5 5 5 5 5 5 d b e e e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e b c d 5 5 5 5 5 5 5 5 5 b b b b 5 5 5 5 5 5 5 5 5 a 5 5 5 b e e e e e e b d 5 5 5 5 5 5 5 5 5 a 5 5 b e e e e e e e e e e e e e e e e e e 
+e e e e e e e e e e e b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b e e e e e e b b b b b b b b b b b b b b b e e e e e e e e e e e e e e e e e e 
 `]
-scene.setTileMap(list[game.askForNumber("level", 2)])
+let level = game.askForNumber("level", 2)
+scene.setTileMap(list[level])
 scene.setBackgroundColor(8)
 scene.setTile(1, img`
 . . . . . . . . . . . . . . . . 
@@ -999,7 +1048,9 @@ for (let value5 of scene.getTilesByType(12)) {
 `, SpriteKind.Food)
     scene.place(value5, mySprite2)
 }
-pet()
+if (game.ask("pet")) {
+    pet()
+}
 forever(function () {
     if (controller.B.isPressed() && mySprite.isHittingTile(CollisionDirection.Bottom)) {
         controller.moveSprite(mySprite, 150, 0)
